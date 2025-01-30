@@ -1,58 +1,47 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import HeadBox from './components/headBox';
-import BodyBox from './components/bodyBox';
+import { StatusBar } from "expo-status-bar";
+import React, { Component } from "react";
+import { StyleSheet, View } from "react-native";
 
-export default class App extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      items: [],
-      item: ''
-    }
-  }
-  //
-  setItem = (value) => {
-    console.log(value);
-    this.setState({ item:value });
-  }
-  //add a new item value to items array.
-  /*addItems = (value) => {
-    this.setState({
-      items:[...this.state.items,value],
-      item:'',
-    });
-    console.log(this.state.items.length);
-    console.log('!callback is activated.');
-  }*/
-  addItems = () => {
-    this.setState({
-      items:[...this.state.items,this.state.item],
-      item:'',
-    });
-    console.log(this.state.items.length);
-    console.log('!callback is activated.');
-  }
-  //
-  render(){
+//import HelloWorldClass from "./components/01-HelloWorld-class";
+//import HelloWorldFunction from "./components/01-HelloWorld-funtion";
+//import HelloStyles from "./components/02-HelloStyles-function";
+//import HelloButton1 from "./components/02-HelloButton1";
+import HelloButton2 from "./components/02-HelloButton2";
+//import HelloImages from "./components/02-HelloImages";
+//import HelloProps from "./components/02-HelloProps";
+//import HelloModal2 from "./components/03-HelloModal2";
+//import HelloState4 from "./components/04-HelloState4";
+
+export default class App extends Component {
+  render() {
     return (
       <View style={styles.container}>
-        <HeadBox
-          _item={ this.state.item }
-          _setItem={ this.setItem }
-          _addItem={ this.addItems }
-        />
-        <Text>Current: { this.state.item }</Text>
-        <BodyBox 
-          _items={ this.state.items }
-        />
+        {/*<HelloWorldClass />
+        <HelloWorldFunction/>
+        <HelloStyles/>
+        <HelloImages/>
+        <HelloButton1 />*/}
+        <HelloButton2 />
+        {/*<HelloProps name='ange' />
+        <HelloProps name='cory' />
+        <HelloModal1 />
+        <HelloModal2 />
+        <HelloState1 />
+        <HelloState2 />
+        <HelloState3 />
+        <HelloState4 />*/}
+
+        <StatusBar style="auto" />
       </View>
     );
-  }  
+  }
 }
-//
+
 const styles = StyleSheet.create({
   container: {
-    flex: 1, backgroundColor: '#fff',
+    flex: 1,
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
   },
 });
