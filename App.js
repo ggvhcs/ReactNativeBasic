@@ -6,7 +6,9 @@ import { StyleSheet, View } from "react-native";
 //import HelloWorldFunction from "./components/01-HelloWorld-funtion";
 //import HelloStyles from "./components/02-HelloStyles-function";
 //import HelloButton1 from "./components/02-HelloButton1";
-import HelloButton2 from "./components/02-HelloButton2";
+//import HelloButton2 from "./components/02-HelloButton2";
+//import HelloTouchableOpacity from "./components/02-HelloTouchableOpacity";
+import HelloImagePicker from "../rnd-notes/ReactNativeBasic/components/03-HelloImagePicker";
 //import HelloImages from "./components/02-HelloImages";
 //import HelloProps from "./components/02-HelloProps";
 //import HelloModal2 from "./components/03-HelloModal2";
@@ -20,8 +22,10 @@ export default class App extends Component {
         <HelloWorldFunction/>
         <HelloStyles/>
         <HelloImages/>
-        <HelloButton1 />*/}
+        <HelloButton1 />
         <HelloButton2 />
+        <HelloTouchableOpacity/>*/}
+        <HelloImagePicker />
         {/*<HelloProps name='ange' />
         <HelloProps name='cory' />
         <HelloModal1 />
@@ -30,7 +34,6 @@ export default class App extends Component {
         <HelloState2 />
         <HelloState3 />
         <HelloState4 />*/}
-
         <StatusBar style="auto" />
       </View>
     );
