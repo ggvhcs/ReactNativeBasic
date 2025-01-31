@@ -1,12 +1,16 @@
 import React from "react";
 import { StyleSheet, Text, View, Image } from "react-native";
 
-export default function HelloImages() {
+export default function HelloImagesUri() {
   return (
     <View style={styles.container}>
       <Text>!Hola Images desde React Native...</Text>
       <Image
-        source={{ uri: "https://picsum.photos/200/200" }}
+        source={{
+          width: 200,
+          height: 300,
+          uri: "https://picsum.photos/200/200",
+        }}
         style={styles.image}
       />
     </View>
