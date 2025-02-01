@@ -5,15 +5,14 @@ export default function HelloButton2() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>!Hola desde React Native...</Text>
-      <Image
-        source={{ uri: "https://picsum.photos/200/200" }}
-        style={styles.image}
-      />
+      <Image source={require("../assets/favicon.png")} style={styles.image} />
       <Button
         title="!press me."
-        style={styles.button}
         onPress={() => {
-          Alert.alert("!button pressed.");
+          Alert.alert("!warning.", "!are you sure of this action ?.", [
+            { text: "Yes", onPress: () => console.log("Yes") },
+            { text: "No", onPress: () => console.log("No") },
+          ]);
         }}
       />
     </View>
@@ -28,6 +27,5 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   title: { fontSize: 30 },
-  image: { height: 200, width: 200, borderRadius: 100 },
-  button: { color: "#000" },
+  image: { height: 100, width: 100, borderRadius: 10 },
 });

@@ -4,7 +4,7 @@ import { StyleSheet, Text, View, Image, Button } from "react-native";
 export default function HelloButton1() {
   return (
     <View style={styles.container}>
-      <Text>!Hola desde React Native...</Text>
+      <Text style={styles.title}>!Hola desde React Native...</Text>
       <Image
         source={{ uri: "https://picsum.photos/200/200" }}
         style={styles.image}
