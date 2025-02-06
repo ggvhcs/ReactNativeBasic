@@ -1,11 +1,18 @@
 import React from "react";
-import { StyleSheet,Text, View } from "react-native";
+import { StyleSheet, Text, TextInput, View } from "react-native";
 
 export default function HelloWorldFunction() {
   console.log("App executed");
   return (
     <View style={styles.container}>
       <Text>!Hello World...Function Components.</Text>
+      <TextInput
+        placeholder="First Name"
+        style={{
+          borderBottomColor: "#ccc",
+          borderBottomWidth: 1,
+        }}
+      />
     </View>
   );
 }
