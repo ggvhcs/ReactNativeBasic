@@ -1,19 +1,15 @@
 import React from "react";
-import { StyleSheet, Text, View, Image, Button, Alert } from "react-native";
+import { StyleSheet, Text, View, Button } from "react-native";
 
-export default function HelloButton2() {
+export default function HelloButtonConsoleLog() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>!Hola desde React Native...</Text>
-      <Image
-        source={{ uri: "https://picsum.photos/200/200" }}
-        style={styles.image}
-      />
+      <Text style={styles.title}>!Hola desde React Native Button...</Text>
       <Button
         title="!press me."
         style={styles.button}
         onPress={() => {
-          Alert.alert("!button pressed.");
+          console.log("!button pressed.");
         }}
       />
     </View>
@@ -28,6 +24,5 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   title: { fontSize: 30 },
-  image: { height: 200, width: 200, borderRadius: 100 },
   button: { color: "#000" },
 });

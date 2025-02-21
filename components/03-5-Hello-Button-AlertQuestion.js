@@ -1,11 +1,10 @@
 import React from "react";
-import { StyleSheet, Text, View, Image, Button, Alert } from "react-native";
+import { StyleSheet, Text, View, Button, Alert } from "react-native";
 
-export default function HelloButton2() {
+export default function HelloButtonAlertQuestion() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>!Hola desde React Native...</Text>
-      <Image source={require("../assets/favicon.png")} style={styles.image} />
+      <Text style={styles.title}>!Hola desde React Native Button...</Text>
       <Button
         title="!press me."
         onPress={() => {
@@ -27,5 +26,4 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   title: { fontSize: 30 },
-  image: { height: 100, width: 100, borderRadius: 10 },
 });
