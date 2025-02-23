@@ -1,11 +1,11 @@
 import React from "react";
 import { StyleSheet, Text, TextInput, View } from "react-native";
 
-export default function HelloWorldFunction() {
+export default function HelloTextInput() {
   console.log("App executed");
   return (
     <View style={styles.container}>
-      <Text>!Hello World...Function Components.</Text>
+      <Text>!Hello World...Text Inputs.</Text>
       <TextInput
         placeholder="First Name"
         style={{
